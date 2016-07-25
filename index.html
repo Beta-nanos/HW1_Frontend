@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- jQuery, jQuery.ui -->
+	    <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+	    <script src="https://code.jquery.com/jquery.min.js"></script>
+	    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+	    <!-- Bootstrap -->
+	    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	    <script src="react-bootstrap/react-bootstrap.min.js"></script>
+
+
+	    <!-- React -->
+	    <script src="https://fb.me/react-0.13.3.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
+
+	    <!-- CSS -->
+	    <link rel="stylesheet" href="css/cssmain.css">
+
+		<title>Betananos</title>
+	</head>
+	<body>
+
+		<!--Nav-->
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span> 
+		      </button>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#home">HOME</a></li>
+		        <li><a href="#show">RAITING</a></li>
+		        <li><a href="#c">CREATE</a></li>
+		        <li><a href="#u">UPDATE</a></li>
+		        <li><a href="#d">DELETE</a></li>
+		        <li><a href="#team">TEAM</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+	<!--FinNav-->
+
+		<div class="jumbotron text-center" id="home">
+				<img src="img/note2.png" alt="logo">
+				<p>Music Garage</p>
+				<p>The Website for your music</p>
+		</div>
+
+		<div id="show" class="container-fluid text-center">
+		  <h3>TOP RAITING</h3>
+
+			<table class="table">
+			    <thead>
+			      <tr>
+			        <th>ID</th>
+			        <th>TITLE</th>
+			        <th>PRICE</th>
+			        <th>RATING</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>01</td>
+			        <td>The Wall</td>
+			        <td>Goodbye Blue Sky</td>
+			        <td>10</td>
+			      </tr>
+			      <tr>
+			        <td>02</td>
+			        <td>The Black Album</td>
+			        <td>Enter Sandman</td>
+			        <td>8.5</td>
+			      </tr>
+			      <tr>
+			        <td>03</td>
+			        <td>Rust in Peace</td>
+			        <td>Hangar 18</td>
+			        <td>9</td>
+			      </tr>
+			    </tbody>
+			</table>
+		</div>
+
+		<div class="container-fluid text-center" id="c">
+			<div class="row panel">
+				<h3>CREATE</h3>
+				<div class="col-sm-5">
+			      <img src="img/audio.png" alt="create">
+			    </div>
+			    <div class="col-sm-7" id="create">
+			    	<script src="src/music.js" type="text/babel" ></script>
+			    </div>
+			</div>
+		</div>
+
+		<div class="container-fluid text-center" id="u" >
+			<div class="row panel">
+				<h3>UPDATE</h3>
+				<div class="col-sm-5">
+			      <img src="img/edit.png" alt="edit">
+			    </div>
+			    <div class="col-sm-7" id="update">
+			    	<script src="src/musicupdate.js" type="text/babel" ></script>
+			    </div>
+			</div>
+		</div>
+
+		<div class="container-fluid text-center" id="d" >
+			<div class="row panel">
+				<h3>DELETE</h3>
+				<div class="col-sm-5">
+			      <img src="img/delete.png" alt="delete">
+			    </div>
+			    <div class="col-sm-7" id="delete">
+			    	<script src="src/musicdelete.js" type="text/babel" ></script>
+			    </div>
+			</div>
+		</div>
+
+		<div id="team" class="container-fluid text-center">
+			<h2>TEAM</h2>
+			<h3>BETA-NANOS</h3>
+			<div class="row">
+
+				<div class="col-sm-3">
+			      <div class="thumbnail">
+			        <img src="img/jm.png" alt="Jesus Murillo">
+			        <p><strong>Chungo</strong></p>
+			        <p>Back-end</p>
+			      </div>
+			    </div>
+
+			    <div class="col-sm-3">
+			      <div class="thumbnail">
+			        <img src="img/ri.png" alt="Ricardo Interiano">
+			        <p><strong>Raim</strong></p>
+			        <p>Back-end</p>
+			      </div>
+			    </div>
+
+			    <div class="col-sm-3">
+			      <div class="thumbnail">
+			        <img src="img/gc.png" alt="Gabriela Castellanos">
+			        <p><strong>Gaby</strong></p>
+			        <p>Front-end</p>
+			      </div>
+			    </div>
+
+			    <div class="col-sm-3">
+			      <div class="thumbnail">
+			        <img src="img/li.png" alt="Luis Isaula">
+			        <p><strong>Isaula</strong></p>
+			        <p>Front-end</p>
+			      </div>
+			    </div>
+			</div>
+		</div>
+
+		<footer class="text-center">
+		  <a class="up-arrow" href="#home" data-toggle="tooltip" title="TO TOP">
+		    <span class="glyphicon glyphicon-chevron-up"></span>
+		  </a><br><p> Made By Beta-nanos ® 2016</p> 
+		</footer>
+    	
+	</body>
+</html>
